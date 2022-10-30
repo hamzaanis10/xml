@@ -1,0 +1,30 @@
+breakfast_menu {
+  padding: 20px;
+}
+
+food {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#name {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+price,
+description,
+calories {
+  background-color: indianred;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
