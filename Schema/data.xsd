@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.google.com"
+    xmlns="https://www.google.com"
+    elementFormDefault="qualified"
+>
+    <!-- Restriction on content -->
+    <!-- <xs:element name="age">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minExclusive value="0"></xs:minExclusive>
+                <xs:maxExclusive value="100"></xs:maxExclusive>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> -->
+
+    <!-- Restriction on set of values -->
+    <!-- <xs:element name="car">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Mehran"></xs:enumeration>
+                <xs:enumeration value="Alto"></xs:enumeration>
+                <xs:enumeration value="Vitz"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> -->
+
+    <!-- <xs:element name="gender">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="male|female"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> -->
+
+    <!-- <xs:element name="employee">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="first_name" type="xs:string"></xs:element>
+                <xs:element name="last_name" type="xs:string"></xs:element>
+                <xs:element name="email" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> -->
+
+    <!-- <xs:element name="person">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="firstName" type="xs:string"></xs:element>
+                <xs:element name="lastName" type="xs:string"></xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="student">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="employee" type="xs:string"></xs:element>
+                <xs:element name="member" type="xs:string"></xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element> -->
+
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="full_name" type="xs:string"></xs:element>
+                <xs:element name="child_name" type="xs:string" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+
+<!-- <employee>
+    <first_name></first_name>
+    <last_name></last_name>
+    <email></email>
+</employee> -->
+
+<!-- Indicators -->
+
+<!-- Order Indicators 
+    all    child elements must appear in any order and must occus only once
+    choice 
+    sequence
+-->
+
+<!-- Occurence Indicators
+    minOccurs
+    maxOccurs
+-->
+
+<!-- 
+    xs:string
+    xs:int
+    xs:decimal
+    xs:boolean
+    xs:date
+    xs:time
+ -->
