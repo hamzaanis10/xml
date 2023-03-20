@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE root-element SYSTEM "tv_shedule.dtd" [
+
+]>
+
+
+<TVSCHEDULE NAME="My TV Schedule">
+
+    <CHANNEL CHAN="ABC">
+      <BANNER>ABC Schedule</BANNER>
+      <DAY>
+        <DATE>2023-03-01</DATE>
+        <PROGRAMSLOT>
+          <TIME>08:00 AM</TIME>
+          <TITLE RATING="PG">Morning News</TITLE>
+          <DESCRIPTION>News and weather updates.</DESCRIPTION>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT>
+          <TIME>09:00 AM</TIME>
+          <TITLE RATING="PG">Talk Show</TITLE>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT>
+          <TIME>10:00 AM</TIME>
+          <TITLE RATING="PG" LANGUAGE="English">Cooking Show</TITLE>
+        </PROGRAMSLOT>
+      </DAY>
+      <DAY>
+        <DATE>2023-03-02</DATE>
+        <HOLIDAY>Public Holiday</HOLIDAY>
+      </DAY>
+    </CHANNEL>
+  
+  
+    <CHANNEL CHAN="NBC">
+      <BANNER>NBC Schedule</BANNER>
+      <DAY>
+        <DATE>2023-03-01</DATE>
+        <PROGRAMSLOT VTR="123456">
+          <TIME>08:00 AM</TIME>
+          <TITLE RATING="PG">Morning Show</TITLE>
+          <DESCRIPTION>Entertainment news and interviews.</DESCRIPTION>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT VTR="789012">
+          <TIME>09:00 AM</TIME>
+          <TITLE RATING="PG">Talk Show</TITLE>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT VTR="345678">
+          <TIME>10:00 AM</TIME>
+          <TITLE RATING="PG" LANGUAGE="Spanish">Cooking Show</TITLE>
+        </PROGRAMSLOT>
+      </DAY>
+    </CHANNEL>
+  
+    
+  </TVSCHEDULE>

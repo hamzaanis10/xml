@@ -1,0 +1,13 @@
+<!ELEMENT students (name, age, email*, id, fees?, address+)>
+    <!ELEMENT name (first_name, last_name)>
+    <!ELEMENT first_name (#PCDATA)>
+    <!ELEMENT last_name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT fees (#PCDATA)>
+    <!ATTLIST address home CDATA #REQUIRED>
+    <!ATTLIST address office CDATA #IMPLIED>
+    <!ENTITY nbsp "#hamza">
+    <!ENTITY writer "Donald Trump">
